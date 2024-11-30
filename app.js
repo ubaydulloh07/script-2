@@ -138,7 +138,7 @@ if (R % 5 === 0 && R % 3 === 0) {
 
 
 
-// beshinchi algaritm end
+// // beshinchi algaritm end
 
 
 
@@ -150,7 +150,39 @@ if (R % 5 === 0 && R % 3 === 0) {
 // OLTINCHI ALGARITM
 
 
-// alert("oltinchi masala boshlandi");
+alert("oltinchi masala boshlandi");
+
+// Foydalanuvchi kiritgan A va B sonlarini qabul qilamiz
+let M = prompt("M sonini kiriting:");
+let N = prompt("N sonini kiriting:");
+
+// 5 ga yaqin bo'lgan sonni aniqlash
+function engYaqinSon(a, b) {
+    const target = 5;  // Maqsadli son: 5
+    const distA = Math.abs(a - target);  // A sonining 5 ga bo'lgan masofasi
+    const distB = Math.abs(b - target);  // B sonining 5 ga bo'lgan masofasi
+    
+    if (distA < distB) {
+        console.log(`M soni (${a}) 5 ga yaqinroq.`);
+    } else if (distB < distA) {
+        console.log(`N soni (${b}) 5 ga yaqinroq.`);
+    } else {
+        console.log("M va N sonlari teng masofada.");
+    }
+}
+
+// Kiritilgan sonlar bilan funksiyani chaqiramiz
+engYaqinSon(Number(M  ), Number(N));
+
+
+
+
+
+
+
+
+
+
 
 
 // oltinchi masala end
@@ -182,3 +214,6 @@ let lastNumber = numbers[numbers.length - 1];
 let sum = firstNumber + lastNumber;
 
 console.log("Birinchi va oxirgi sonlarning yig'indisi:", sum);
+
+
+// yettinchi masala end
