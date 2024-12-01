@@ -5,10 +5,10 @@
 
 alert("birinchi masala boshlandi");
 
-let  a = parseFloat(prompt("1-tomon uzunligini kiriting (metr):"));
-let b = parseFloat(prompt("2-tomon uzunligini kiriting (metr):"));
+let  a = +(prompt("1-tomon uzunligini kiriting (metr):"));
+let b = +(prompt("2-tomon uzunligini kiriting (metr):"));
 
-if (!isNaN(a) && !isNaN(b)) {
+if ((a) && (b)) {
     let S = a * b;
   console.log("Yer maydonining yuzasi: " + S + " m²");
 
@@ -152,16 +152,15 @@ if (R % 5 === 0 && R % 3 === 0) {
 
 alert("oltinchi masala boshlandi");
 
-// Foydalanuvchi kiritgan A va B sonlarini qabul qilamiz
+
 let M = prompt("M sonini kiriting:");
 let N = prompt("N sonini kiriting:");
 
-// 5 ga yaqin bo'lgan sonni aniqlash
+
 function engYaqinSon(a, b) {
-    const target = 5;  // Maqsadli son: 5
-    const distA = Math.abs(a - target);  // A sonining 5 ga bo'lgan masofasi
-    const distB = Math.abs(b - target);  // B sonining 5 ga bo'lgan masofasi
-    
+    const target = 5;  
+    const distA = Math.abs(a - target); 
+    const distB = Math.abs(b - target); 
     if (distA < distB) {
         console.log(`M soni (${a}) 5 ga yaqinroq.`);
     } else if (distB < distA) {
@@ -171,7 +170,6 @@ function engYaqinSon(a, b) {
     }
 }
 
-// Kiritilgan sonlar bilan funksiyani chaqiramiz
 engYaqinSon(Number(M  ), Number(N));
 
 
@@ -217,3 +215,27 @@ console.log("Birinchi va oxirgi sonlarning yig'indisi:", sum);
 
 
 // yettinchi masala end
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
